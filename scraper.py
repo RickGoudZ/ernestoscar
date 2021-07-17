@@ -56,11 +56,16 @@ try:
                 print(link.get('style'))
                 content["content"]["img"].append(imgsrc)
 ###-href
+    c= 0
     for tag in ul:
             for link in tag.find_all("a", {"class":"carhit"}):
-                href = "https://www.classicnumber.com/" + str(link.get('href'))
-                print(link.get('href'))
-                content["content"]["href"].append(href)
+                if c == 0:
+                    href = "https://www.classicnumber.com/" + str(link.get('href'))
+                    print(link.get('href'))
+                    content["content"]["href"].append(href)
+                    c = 1
+                else:
+                    c = 0
 ###
 except:
     print("error")

@@ -175,6 +175,8 @@ body {
     font-weight: 900;
     font-size: 30px;
     top: -30px;
+    max-height: 35px;
+    overflow: hidden;
 }
 
 .adh3 {
@@ -209,4 +211,20 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
+}
+
+#pictures {
+    
+}
+
+.small {
+    height: 33%;
+    width: 33%;
+    background-color: #313131;
+    position: relative;
+}
+
+.small img {
+    width: 80%;
+    height: auto;
 }
