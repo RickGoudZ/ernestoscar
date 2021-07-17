@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: Butler;
+    src: url(images/Butler_Black.otf);
+  }
+  
+  div {
+    font-family: myFirstFont;
+  }
+
+html {
+    border: 0px;
+    margin: 0px;
+    background: rgba(57, 57, 57, 1);
+}
+
+body {
+    border: 0px;
+    margin: 0px;
+}
+
+
+#pagebody {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#topimg {
+    width: 100%;
+}
+
+#circle {
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    left: 168px;
+    top: 28px;
+    border-radius: 50%;
+    background: #A70000;
+    z-index: 0;
+    top: -25px;
+}
+
+.logotext {
+    color: white;
+    z-index: 9;
+    font-family: Butler;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 96px;
+    position: relative;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+#ernestos {
+    bottom: 38px;
+    left: 120px;
+}
+
+#logo {
+    position: absolute;
+    margin: 50px;
+}
+
+#hr1 {
+    width: 100%;
+    height: 4px;
+    background: white;
+    margin: 0px;
+    border: 0px;
+}
+
+#intro {
+    color: white;
+    background: #313131;
+    border: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 60px;
+    position: relative;
+}
+
+#into_p {
+    position: relative;
+    margin: 25px;
+    top: 25px;
+    font-family: Bellota Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 36px;
+}
+
+.button {
+    background-color: #A70000;
+    border: none;
+    color: white;
+    margin: 25px;
+    margin-top: 50px;
+    height: 50px;
+    width: 153px;
+        font-family: Bellota Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+#cfs {
+    text-align: center;
+    color: white;
+    font-family: Bellota Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 65px;
+    margin-left: 5%;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    line-height: 0.1em;
+}
+
+#cfs span {
+    background:rgba(57, 57, 57, 1); 
+    padding:0 10px; 
+}
+
+#carsforsale {
+    width: 90%;
+    margin-bottom: 65px;
+}
+
+
+.border {
+    position:relative;
+    background-color: #1B1B1B;
+    width: 25%;
+    min-width: 25%;
+    height: auto;
+    float: left;
+    margin-top: 65px;
+    margin-right: 12.5%;
+    border-radius: 0px 0px 50px 0px;
+    overflow: hidden;
+}
+
+#ads {
+    margin-left: 5%;
+    width: 100%;
+}
+
+.adimg {
+    position: relative;
+    width: 100%;
+    border-style: solid;
+    border-color: #A70000;
+    border-width: 0px 0px 2px 0px;
+    top: -30px;
+}
+
+.adh2 {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 12px;
+    margin-bottom: 0px;
+    color: white;
+    font-family: Butler;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    top: -30px;
+}
+
+.adh3 {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 12px;
+    font-family: Butler;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    top: -30px;
+    color: #A70000;
+}
+
+.adh4 {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: rgba(57, 57, 57, 1);
+    top: -20px;
+}
+
+.adh5 {
+    position: relative;
+    margin-top: -1px;
+    margin-left: 12px;
+    margin-bottom: 0px;
+    color: white;
+    top: -20px;
+    font-family: Butler;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+}
