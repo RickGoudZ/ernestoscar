@@ -147,6 +147,7 @@ body {
     margin-right: 12.5%;
     border-radius: 0px 0px 50px 0px;
     overflow: hidden;
+    min-height: 347px;
 }
 
 #ads {

@@ -9,12 +9,17 @@ req.onreadystatechange = () => {
         console.log(data);
         console.log(data['record']["content"])
         var json = data['record']["content"];
+        var counter = 0;
+        var array = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44]
         for (let i = 0; i < data.record.content.name.length; i++) {
 
             var clone = document.getElementById('clone');
             var cloneto = document.getElementById('ads')
             clone_a = clone.cloneNode(true);
             clone_a.style.display = "block";
+            if (array.includes(i) == true) {
+                clone_a.firstElementChild.style.marginRight = "0px";
+            }
             //
             clone_a.firstElementChild.firstElementChild.src =  json["img"][i];
             clone_a.firstElementChild.children[1].innerHTML = json['name'][i];
