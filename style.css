@@ -148,6 +148,7 @@ body {
     border-radius: 0px 0px 50px 0px;
     overflow: hidden;
     min-height: 347px;
+    min-width: 250px;
 }
 
 #ads {
@@ -192,25 +193,30 @@ body {
 }
 
 .adh4 {
-    position: relative;
+    position: absolute;
     margin-top: 40px;
     margin-left: 10px;
     margin-bottom: 0px;
-    color: rgba(57, 57, 57, 1);
-    top: -20px;
+    color: rgb(92, 92, 92);
+    bottom: 52px;
+    font-family: Bellota Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 13px;
 }
 
 .adh5 {
-    position: relative;
+    position: absolute;
     margin-top: -1px;
     margin-left: 12px;
     margin-bottom: 0px;
     color: white;
-    top: -20px;
     font-family: Butler;
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
+    bottom: 25px;
 }
 
 #pictures {

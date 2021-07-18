@@ -20,6 +20,7 @@ req.onreadystatechange = () => {
             if (array.includes(i) == true) {
                 clone_a.firstElementChild.style.marginRight = "0px";
             }
+            clone_a.className = "clone";
             //
             clone_a.setAttribute("href", json["href"][i])
             clone_a.firstElementChild.firstElementChild.src =  json["img"][i];
@@ -29,7 +30,9 @@ req.onreadystatechange = () => {
             clone_a.firstElementChild.children[4].innerHTML = json["price"][i];
             //     
             cloneto.appendChild(clone_a)
-        }}
+        }
+        clone.parentElement.removeChild(clone);}
+        arange()
   };
   
   req.open("GET", "https://api.jsonbin.io/v3/b/60f1e6e3a917050205c90846", true);
@@ -47,3 +50,54 @@ $( "#readmore" ).click(function() {
     height += 45;
     $("#intro").height(height)
   });
+
+
+function arange() {
+  if ($(window).width() < 1590) {
+    var array2 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41]
+    var divs = document.getElementsByClassName("clone");
+    for (let u = 0; u < divs.length; u++) {
+        if (array2.includes(u) == true) {
+            divs[u].firstElementChild.style.marginRight = "0px"; 
+        }
+        else {
+          divs[u].firstElementChild.style.marginRight = "12.5%";
+        }
+    }
+} else {
+      var array = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44]
+      var divs = document.getElementsByClassName("clone");
+      for (let u = 0; u < divs.length; u++) {
+          if (array.includes(u) == true) {
+              divs[u].firstElementChild.style.marginRight = "0px"; 
+          }
+          else {
+              divs[u].firstElementChild.style.marginRight = "12.5%";
+          }
+      }
+    }};
+  
+  $(window).on('resize', function() {
+          if ($(window).width() < 1590) {
+              var array2 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41]
+              var divs = document.getElementsByClassName("clone");
+              for (let u = 0; u < divs.length; u++) {
+                  if (array2.includes(u) == true) {
+                      divs[u].firstElementChild.style.marginRight = "0px"; 
+                  }
+                  else {
+                    divs[u].firstElementChild.style.marginRight = "12.5%";
+                  }
+              }
+          } else {
+                var array = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44]
+                var divs = document.getElementsByClassName("clone");
+                for (let u = 0; u < divs.length; u++) {
+                    if (array.includes(u) == true) {
+                        divs[u].firstElementChild.style.marginRight = "0px"; 
+                    }
+                    else {
+                        divs[u].firstElementChild.style.marginRight = "12.5%";
+                    }
+                }
+            }});
