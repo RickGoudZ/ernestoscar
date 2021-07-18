@@ -62,6 +62,7 @@ function arange() {
         }
         else {
           divs[u].firstElementChild.style.marginRight = "12.5%";
+          divs[u].firstElementChild.style.marginLeft = "15%";
         }
     }
 } else {
@@ -86,7 +87,12 @@ function arange() {
                       divs[u].firstElementChild.style.marginRight = "0px"; 
                   }
                   else {
-                    divs[u].firstElementChild.style.marginRight = "12.5%";
+                    var widthcfs = $("#carsforsale").width()
+                    var widthborder = $(".border").width()
+                    var procentage = (widthcfs - (2 * widthborder)) / 3
+                    console.log("procentage", procentage);
+                    divs[u].firstElementChild.style.marginLeft = procentage + "px";
+                    divs[u].firstElementChild.style.marginRight = procentage + "px";
                   }
               }
           } else {
@@ -94,10 +100,12 @@ function arange() {
                 var divs = document.getElementsByClassName("clone");
                 for (let u = 0; u < divs.length; u++) {
                     if (array.includes(u) == true) {
-                        divs[u].firstElementChild.style.marginRight = "0px"; 
+                        divs[u].firstElementChild.style.marginRight = "0px";
+                        divs[u].firstElementChild.style.marginLeft = "0%"; 
                     }
                     else {
                         divs[u].firstElementChild.style.marginRight = "12.5%";
+                        divs[u].firstElementChild.style.marginLeft = "0%";
                     }
                 }
             }});
