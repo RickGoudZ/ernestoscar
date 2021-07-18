@@ -56,6 +56,8 @@ function arange() {
   if ($(window).width() < 1590) {
     var array2 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41]
     var divs = document.getElementsByClassName("clone");
+    var dev2 = (divs.length / 2) * 412
+            $('#ads').height(dev2)
     for (let u = 0; u < divs.length; u++) {
         if (array2.includes(u) == true) {
             divs[u].firstElementChild.style.marginRight = "0px"; 
@@ -68,6 +70,8 @@ function arange() {
 } else {
       var array = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44]
       var divs = document.getElementsByClassName("clone");
+      var dev3 = (divs.length / 3) * 412
+            $('#ads').height(dev3)
       for (let u = 0; u < divs.length; u++) {
           if (array.includes(u) == true) {
               divs[u].firstElementChild.style.marginRight = "0px"; 
@@ -82,6 +86,8 @@ function arange() {
           if ($(window).width() < 1590) {
               var array2 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41]
               var divs = document.getElementsByClassName("clone");
+              var dev2 = (divs.length / 2) * 412
+            $('#ads').height(dev2)
               for (let u = 0; u < divs.length; u++) {
                   if (array2.includes(u) == true) {
                       divs[u].firstElementChild.style.marginRight = "0px"; 
@@ -90,7 +96,6 @@ function arange() {
                     var widthcfs = $("#carsforsale").width()
                     var widthborder = $(".border").width()
                     var procentage = (widthcfs - (2 * widthborder)) / 3
-                    console.log("procentage", procentage);
                     divs[u].firstElementChild.style.marginLeft = procentage + "px";
                     divs[u].firstElementChild.style.marginRight = procentage + "px";
                   }
@@ -98,6 +103,8 @@ function arange() {
           } else {
                 var array = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44]
                 var divs = document.getElementsByClassName("clone");
+                var dev3 = (divs.length / 3) * 412
+            $('#ads').height(dev3)
                 for (let u = 0; u < divs.length; u++) {
                     if (array.includes(u) == true) {
                         divs[u].firstElementChild.style.marginRight = "0px";
@@ -109,3 +116,50 @@ function arange() {
                     }
                 }
             }});
+
+$('.small').height($('.small').width())
+
+    var witdh = $('#pictures').width()
+    var size = 0.36 * witdh
+    $('#big').width(size)
+            
+
+function resize() {
+    var witdh = $('#pictures').width()
+        var smallwitdh = $('#small').width()
+        var size = witdh - (smallwitdh * 2)
+        console.log("size", size);
+        $('#big').width(size)
+        $('#big').css('min-height', size + 'px')
+        $('#big').css('margin-left',  smallwitdh+ 'px')
+        var imgsize = 0.7 * size
+        $("#bigimg").css('min-height', imgsize - 25 + 'px')
+        $("#bigimg").css('min-width', imgsize - 25 + 'px')
+        var big = $('#big').width();
+        var small = $('#small').width();
+        $('#small').css('margin-top', (big - small) / 2 + 'px')
+        $('#small2').css('margin-top', (big - small) / 2 + 'px')
+        $('#contactdiv').css('bottom', ((witdh - (witdh * 2)) / 2 ) - 65 + 'px')
+}
+resize()
+
+$(window).on('resize', function() {
+    var witdh = $('#pictures').width()
+        var smallwitdh = $('#small').width()
+        var size = witdh - (smallwitdh * 2)
+        console.log("size", size);
+        $('#big').width(size)
+        $('#big').css('min-height', size + 'px')
+        $('#big').css('margin-left',  smallwitdh+ 'px')
+        var imgsize = 0.7 * size
+        $("#bigimg").css('min-height', imgsize - 25 + 'px')
+        $("#bigimg").css('min-width', imgsize - 25 + 'px')
+        var big = $('#big').width();
+        var small = $('#small').width();
+        $('#small').css('margin-top', (big - small) / 2 + 'px')
+        $('#small2').css('margin-top', (big - small) / 2 + 'px')
+        $('#contactdiv').css('bottom', ((witdh - (witdh * 2)) / 2 ) - 65 + 'px')
+        var contactinfo = $('#contactinfo').height()
+        var body = $('body').height()
+        $('#end').css('top', contactinfo + body + 160)
+})
