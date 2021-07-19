@@ -49,6 +49,9 @@ $( "#readmore" ).click(function() {
     var height = $("#intro").height();
     height += 45;
     $("#intro").height(height)
+    var body = $('body').height()
+        var mapouter = $('.mapouter').height()
+        $('#end').css('top', body + mapouter + 65)
   });
 
 
@@ -80,7 +83,8 @@ function arange() {
               divs[u].firstElementChild.style.marginRight = "12.5%";
           }
       }
-    }};
+    }
+};
   
   $(window).on('resize', function() {
           if ($(window).width() < 1590) {
@@ -159,7 +163,9 @@ $(window).on('resize', function() {
         $('#small').css('margin-top', (big - small) / 2 + 'px')
         $('#small2').css('margin-top', (big - small) / 2 + 'px')
         $('#contactdiv').css('bottom', ((witdh - (witdh * 2)) / 2 ) - 65 + 'px')
-        var contactinfo = $('#contactinfo').height()
-        var body = $('body').height()
-        $('#end').css('top', contactinfo + body + 160)
+
+        var body = $('#pagebody').height()
+        var mapouter = $('.mapouter').height()
+        $('body').height(body + mapouter + 165)
+        $('#end').css('bottom', 0 - mapouter - 200 + 'px')
 })

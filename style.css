@@ -376,7 +376,7 @@ margin-bottom: 65px;
     color: white;
     background-color: #3F3E3E;
     height: 65px;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: -500px;
     border-width: 2px 0px 0px 0px;
